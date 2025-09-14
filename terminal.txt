@@ -1,0 +1,306 @@
+Last login: Fri Sep 12 15:27:21 on ttys004
+toxaru@Arus-MacBook-Air pp2 % /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+==> Checking for `sudo` access (which may request your password)...
+Password:
+==> This script will install:
+/opt/homebrew/bin/brew
+/opt/homebrew/share/doc/homebrew
+/opt/homebrew/share/man/man1/brew.1
+/opt/homebrew/share/zsh/site-functions/_brew
+/opt/homebrew/etc/bash_completion.d/brew
+/opt/homebrew
+/etc/paths.d/homebrew
+
+Press RETURN/ENTER to continue or any other key to abort:
+==> /usr/bin/sudo /usr/sbin/chown -R toxaru:admin /opt/homebrew
+==> Downloading and installing Homebrew...
+==> /usr/bin/sudo /bin/mkdir -p /etc/paths.d
+==> /usr/bin/sudo tee /etc/paths.d/homebrew
+/opt/homebrew/bin
+==> /usr/bin/sudo /usr/sbin/chown root:wheel /etc/paths.d/homebrew
+==> /usr/bin/sudo /bin/chmod a+r /etc/paths.d/homebrew
+==> Updating Homebrew...
+==> Installation successful!
+
+==> Homebrew has enabled anonymous aggregate formulae and cask analytics.
+Read the analytics documentation (and how to opt-out) here:
+  https://docs.brew.sh/Analytics
+No analytics data has been sent yet (nor will any be during this install run).
+
+==> Homebrew is run entirely by unpaid volunteers. Please consider donating:
+  https://github.com/Homebrew/brew#donations
+
+==> Next steps:
+- Run brew help to get started
+- Further documentation:
+    https://docs.brew.sh
+
+toxaru@Arus-MacBook-Air pp2 % brew help
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+toxaru@Arus-MacBook-Air pp2 % 
+toxaru@Arus-MacBook-Air pp2 % 
+toxaru@Arus-MacBook-Air pp2 % echo 
+
+toxaru@Arus-MacBook-Air pp2 % brew help
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+toxaru@Arus-MacBook-Air pp2 % brew help
+Example usage:
+  brew search TEXT|/REGEX/
+  brew info [FORMULA|CASK...]
+  brew install FORMULA|CASK...
+  brew update
+  brew upgrade [FORMULA|CASK...]
+  brew uninstall FORMULA|CASK...
+  brew list [FORMULA|CASK...]
+
+Troubleshooting:
+  brew config
+  brew doctor
+  brew install --verbose --debug FORMULA|CASK
+
+Contributing:
+  brew create URL [--no-fetch]
+  brew edit [FORMULA|CASK...]
+
+Further help:
+  brew commands
+  brew help [COMMAND]
+  man brew
+  https://docs.brew.sh
+toxaru@Arus-MacBook-Air pp2 % 
+toxaru@Arus-MacBook-Air pp2 % brew search
+Usage: brew search, -S [options] text|/regex/ [...]
+
+Perform a substring search of cask tokens and formula names for text. If
+text is flanked by slashes, it is interpreted as a regular expression.
+
+      --formula, --formulae        Search for formulae.
+      --cask, --casks              Search for casks.
+      --desc                       Search for formulae with a description
+                                   matching text and casks with a name or
+                                   description matching text.
+      --eval-all                   Evaluate all available formulae and casks,
+                                   whether installed or not, to search their
+                                   descriptions. Enabled by default if
+                                   $HOMEBREW_EVAL_ALL is set.
+      --pull-request               Search for GitHub pull requests containing
+                                   text.
+      --open                       Search for only open GitHub pull requests.
+      --closed                     Search for only closed GitHub pull requests.
+      --alpine                     Search for text in the given database.
+      --repology                   Search for text in the given database.
+      --macports                   Search for text in the given database.
+      --fink                       Search for text in the given database.
+      --opensuse                   Search for text in the given database.
+      --fedora                     Search for text in the given database.
+      --archlinux                  Search for text in the given database.
+      --debian                     Search for text in the given database.
+      --ubuntu                     Search for text in the given database.
+  -d, --debug                      Display any debugging information.
+  -q, --quiet                      Make some output more quiet.
+  -v, --verbose                    Make some output more verbose.
+  -h, --help                       Show this message.
+
+Error: Invalid usage: This command requires at least 1 text or regex argument.
+toxaru@Arus-MacBook-Air pp2 %  brew search TEXT|/REGEX/
+
+zsh: no such file or directory: /REGEX/
+toxaru@Arus-MacBook-Air pp2 % brew -- version
+Error: Unknown command: brew --
+toxaru@Arus-MacBook-Air pp2 % brew --version
+Homebrew 4.6.10
+toxaru@Arus-MacBook-Air pp2 % brew install git
+==> Fetching downloads for: git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/manifests/2.51.0
+############################################################################################################################################### 100.0%
+==> Fetching dependencies for git: libunistring, gettext and pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+############################################################################################################################################### 100.0%
+==> Fetching libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/blobs/sha256:3cd26bae2d5fcf61294f14c18e5e7ec773a59ed1bf710fb92055e0db0244e909
+############################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.26
+############################################################################################################################################### 100.0%
+==> Fetching gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/blobs/sha256:b25ac1e62443f8f79eadc3dadf6d3af954d4cbc33a0577fc626aa0c8f2bb01a5
+############################################################################################################################################### 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.46
+############################################################################################################################################### 100.0%
+==> Fetching pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/blobs/sha256:6ddb89f2eef25f73e258a97bf4379539e24ea76e207fa3c0eb49222bdb656de2
+############################################################################################################################################### 100.0%
+==> Fetching git
+==> Downloading https://ghcr.io/v2/homebrew/core/git/blobs/sha256:e757c188846b025c11296d108dbf94cc13ffbdc299f042dcc0d1012236f84182
+############################################################################################################################################### 100.0%
+==> Installing dependencies for git: libunistring, gettext and pcre2
+==> Installing git dependency: libunistring
+==> Downloading https://ghcr.io/v2/homebrew/core/libunistring/manifests/1.3
+Already downloaded: /Users/toxaru/Library/Caches/Homebrew/downloads/a570da63bc1839c7e217f203abd54d4d873ebd6b99f6e88994d0e79e2ebe987c--libunistring-1.3.bottle_manifest.json
+==> Pouring libunistring--1.3.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/libunistring/1.3: 59 files, 5.4MB
+==> Installing git dependency: gettext
+==> Downloading https://ghcr.io/v2/homebrew/core/gettext/manifests/0.26
+Already downloaded: /Users/toxaru/Library/Caches/Homebrew/downloads/d28158ffec04fae757cdbeb46750e8e2ed43b7b17ada49d72a5bda2cff4cd6ed--gettext-0.26.bottle_manifest.json
+==> Pouring gettext--0.26.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/gettext/0.26: 2,428 files, 28.2MB
+==> Installing git dependency: pcre2
+==> Downloading https://ghcr.io/v2/homebrew/core/pcre2/manifests/10.46
+Already downloaded: /Users/toxaru/Library/Caches/Homebrew/downloads/476078c344b0d9fa702da6e94d7fe5dd59bb1897d3fcc12d1b52b4bc0de68854--pcre2-10.46.bottle_manifest.json
+==> Pouring pcre2--10.46.arm64_sequoia.bottle.tar.gz
+🍺  /opt/homebrew/Cellar/pcre2/10.46: 242 files, 6.8MB
+==> Installing git
+==> Pouring git--2.51.0.arm64_sequoia.bottle.tar.gz
+==> Caveats
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+==> Summary
+🍺  /opt/homebrew/Cellar/git/2.51.0: 1,693 files, 55.9MB
+==> Running `brew cleanup git`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> No outdated dependents to upgrade!
+==> Caveats
+zsh completions and functions have been installed to:
+  /opt/homebrew/share/zsh/site-functions
+==> git
+The Tcl/Tk GUIs (e.g. gitk, git-gui) are now in the `git-gui` formula.
+Subversion interoperability (git-svn) is now in the `git-svn` formula.
+toxaru@Arus-MacBook-Air pp2 % git --version
+git version 2.39.5 (Apple Git-154)
+toxaru@Arus-MacBook-Air pp2 % git --version
+
+git version 2.39.5 (Apple Git-154)
+toxaru@Arus-MacBook-Air pp2 % cd ~/Desktop/pp2
+
+toxaru@Arus-MacBook-Air pp2 % git init
+
+Initialized empty Git repository in /Users/toxaru/Desktop/pp2/.git/
+toxaru@Arus-MacBook-Air pp2 % git add .
+
+toxaru@Arus-MacBook-Air pp2 % git commit -m "first commit"
+
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+toxaru@Arus-MacBook-Air pp2 % git add .
+git commit -m "added hello.py"
+git push -u origin main
+
+[main (root-commit) 7ab0e29] added hello.py
+ Committer: Aru Toxeitova <toxaru@Arus-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.py
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+toxaru@Arus-MacBook-Air pp2 % git remote add origin https://github.com/toxeitova/pp2.git
+git branch -M main
+git push -u origin main
+Username for 'https://github.com': toxeitova
+Password for 'https://toxeitova@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 246 bytes | 246.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/toxeitova/pp2.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+toxaru@Arus-MacBook-Air pp2 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.DS_Store
+	w3school/
+
+nothing added to commit but untracked files present (use "git add" to track)
+toxaru@Arus-MacBook-Air pp2 % git add .
+toxaru@Arus-MacBook-Air pp2 % git commit -m "first commit"
+[main cd6eb16] first commit
+ Committer: Aru Toxeitova <toxaru@Arus-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .DS_Store
+ create mode 100644 w3school/test.py
+toxaru@Arus-MacBook-Air pp2 % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 573 bytes | 573.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/toxeitova/pp2.git
+   7ab0e29..cd6eb16  main -> main
+toxaru@Arus-MacBook-Air pp2 % 
