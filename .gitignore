@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Вложенные git из архива GitHowTo
+githowto/files/*/.git/
+githowto/files/*/work.git/
+githowto/files/*/home.git/
+
