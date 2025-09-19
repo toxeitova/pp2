@@ -129,5 +129,28 @@ x = txt.count("chocolates")
 print(x)
 
 
+txt = "My name is Aruzhan" #encode
+x = txt.encode()
+print(x)
+
+txt = "Hello, welcome to kbtu." #endswith
+x = txt.endswith(".")
+print(x)
+
+
+txt = "H\te\tl\tl\to" #expandtabs
+x =  txt.expandtabs(2)
+print(x)
+
+txt = "For only {price:.2f} tenge!"
+print(txt.format(price = 500))  #format
+
+
+
+
+
+
+
+
 
 
