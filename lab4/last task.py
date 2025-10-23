@@ -2,8 +2,7 @@ import json
 
 with open("data.json") as f:
     data = json.load(f)
-
-
+    
 print("Interface Status")
 print("=" * 80)
 print(f"{'DN':<50} {'Description':<20} {'Speed':<10} {'MTU'}")
